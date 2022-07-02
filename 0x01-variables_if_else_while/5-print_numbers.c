@@ -1,21 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main -> assign a random number to the variable n each time it is executed
- * print the last digit of the number stored in the variable n
- * return : always 0
+ * main - Prints all single digit numbers of base 10 starting from 0.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n;
+int num;
 
-	for (n = 0; n < 10; n++)
+for (num = 0; num < 10; num++)
+printf("%d", num);
 
-	{
-		printf("%d\n", n);
-	}
+printf("\n");
 
-	return (9);
+return (0);
 }
