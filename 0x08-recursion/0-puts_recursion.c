@@ -4,7 +4,7 @@
  * main - function that prints a string, followed by a new line.
  * @s: strin to print.
  */
-void _puts_recursion(char *s)
+void _puts_recursion(char *s);
 {
 	if (*s == '\0')
 	{
