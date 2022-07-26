@@ -69,7 +69,7 @@ void util(char **words, char *str)
 			flag = 0;
 		}
 
-		i++
+		i++;
 	}
 
 	if (flag == 1)
