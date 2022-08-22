@@ -1,4 +1,4 @@
-include <elf.h>
+#include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -228,7 +228,8 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 	printf("  Entry point address:               ");
-if (e_ident[EI_DATA] == ELFDATA2MSB)
+
+	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
 		e_entry = ((e_entry << 8) & 0xFF00FF00) |
 			  ((e_entry >> 8) & 0xFF00FF);
